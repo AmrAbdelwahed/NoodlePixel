@@ -52,12 +52,12 @@ const Navbar = () => {
           onClick={() => handleNavigation('/home')} 
           style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}
         >
-          <img src={logo} alt="GuardArmor Logo" style={{ width: 'auto', height: 'auto' }} />
+          <img src={logo} alt="GuardArmor Logo" style={{ height: 'auto' }} />
           <img 
             src={mapleLeaf} 
             alt="Canadian Maple Leaf" 
-            style={{ width: '45px', height: 'auto', marginLeft: '10px' }}
-          />            
+            style={{ width: '35px', height: 'auto', marginLeft: '5px' }}
+          />              
         </div>
       </div>
       <div className="navbar-links-container">
