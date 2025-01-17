@@ -73,10 +73,11 @@ const Navbar = () => {
           >
             {item.text}
           </a>
-        ))}
-        {/* Registration buttons */}
-        
+        ))}        
       </div>
+
+        
+      {/* Mobile Menu Button */}
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
       </div>

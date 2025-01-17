@@ -149,20 +149,33 @@ const Companies = () => {
             </div>
           ))}
 
-          <div className="input" style={{ position: 'relative', margin: '30px 60px', color: '#555' }}>
-            <TextField
-              label="Additional Details"
-              multiline
-              rows={4}
-              variant="outlined"
-              fullWidth
-              name="details"
-              value={formData.details}
-              onChange={handleChange}
-              InputProps={{
-                style: { backgroundColor: '#f0f0f0', marginTop: '5px' },
-              }}
-            />
+          <div className="input-container">
+            <div className="input">
+              <TextField
+                label="Additional Details"
+                multiline
+                rows={4}
+                variant="outlined"
+                fullWidth
+                name="details"
+                value={formData.details}
+                onChange={handleChange}
+                InputProps={{
+                  style: {
+                    backgroundColor: 'transparent', // Matches `.input input`
+                    border: 'none',
+                    outline: 'none',
+                    color: '#797979', // Matches `.input input`
+                    fontSize: '19px', // Matches `.input input`
+                  },
+                }}
+                InputLabelProps={{
+                  style: {
+                    color: '#555', // Matches label text color in `.input`
+                  },
+                }}
+              />
+
             {errors.details && (
               <p
                 className="error"
@@ -178,6 +191,7 @@ const Companies = () => {
                 {errors.details}
               </p>
             )}
+          </div>
           </div>
         </div>
         <div className="submit-container">

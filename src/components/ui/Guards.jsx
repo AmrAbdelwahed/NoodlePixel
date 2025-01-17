@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '@/assets/LoginSignup.css';
-// import '@/assets/navbar.css';
+import '@/assets/navbar.css';
 import { TextField, Snackbar, Alert, CircularProgress } from '@mui/material';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import EmailIcon from '@mui/icons-material/Email';
@@ -9,7 +9,7 @@ import LocationCityIcon from '@mui/icons-material/LocationCity';
 import InfoIcon from '@mui/icons-material/Info';
 import Navbar from './Navbar';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5173';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';  // Changed from 5173 to 3001
 
 const Guards = () => {
   const [formData, setFormData] = useState({
@@ -135,7 +135,8 @@ const Guards = () => {
             </div>
           ))}
 
-          <div className="input" style={{ position: 'relative', margin: '30px 60px', color: '#555' }}>
+        <div className="input-container">
+          <div className="input">
             <TextField
               label="Additional Details"
               multiline
@@ -146,7 +147,18 @@ const Guards = () => {
               value={formData.details}
               onChange={handleChange}
               InputProps={{
-                style: { backgroundColor: '#f0f0f0', marginTop: '5px' },
+                style: {
+                  backgroundColor: 'transparent', // Matches `.input input`
+                  border: 'none',
+                  outline: 'none',
+                  color: '#797979', // Matches `.input input`
+                  fontSize: '19px', // Matches `.input input`
+                },
+              }}
+              InputLabelProps={{
+                style: {
+                  color: '#555', // Matches label text color in `.input`
+                },
               }}
             />
             {errors.details && (
@@ -164,6 +176,7 @@ const Guards = () => {
                 {errors.details}
               </p>
             )}
+          </div>
           </div>
         </div>
         <div className="submit-container">

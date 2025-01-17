@@ -5,7 +5,9 @@
     margin-top: 100px;
     background-color: #fff;
     padding-bottom: 30px;
-    width: 600px;
+    width: 100%;
+    /* Add responsive width */
+    max-width: 95%;
 }
 
 .header{
@@ -22,6 +24,13 @@
     font-size: 48px;
     font-weight: 700;
     text-align: center;
+    /* Add responsive font size */
+    @media (max-width: 800px) {
+        font-size: 36px;
+    }
+    @media (max-width: 480px) {
+        font-size: 28px;
+    }
 }
 .underline{
     width: 61px;
@@ -34,19 +43,53 @@
     display:flex;
     flex-direction: column;
     gap: 25px;
+    
 }
-.input{
+.input-container {
     display: flex;
-    align-items: center;
-    margin: auto;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    margin-top: 30px; /* Space from the previous section */
+    width: 100%; /* Full-width container */
+}
+
+.input {
+    display: flex;
+    align-items: center; /* Align text fields for multiline content */
+    justify-content: center; /* Centers the content inside the input */
+    margin: auto; /* Centers the field */
     width: 480px;
-    height: 80px;
+    height: auto; /* Adjust height dynamically for multiline */
     background-color: #eaeaea;
     border-radius: 6px;
+    padding: 15px; /* Add spacing inside the field */
+    max-width: 90%;
+}
+
+.input textarea {
+    height: auto;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #797979;
+    font-size: 19px;
+    resize: none;
+    max-width: calc(100% - 30px); /* Account for padding */
+    @media (max-width: 480px) {
+        font-size: 16px;
+    }
+}
+
+.input label {
+    color: #555; /* Match label text color */
 }
 
 .input img{
     margin: 0px 30px;
+    @media (max-width: 480px) {
+        margin: 0px 15px;
+    }
 }
 .input input{
     height: 50px;
@@ -56,6 +99,11 @@
     outline: none;
     color: #797979;
     font-size: 19px;
+    /* Add responsive width and font size */
+    max-width: calc(100% - 80px);
+    @media (max-width: 480px) {
+        font-size: 16px;
+    }
 }
 .forgot-password{
    padding-left: 62px;
@@ -88,7 +136,3 @@
     cursor: pointer;
 }
 
-.gray{
-    background-color: #eaeaea;
-    color: #676766;
-}
