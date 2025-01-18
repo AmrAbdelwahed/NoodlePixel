@@ -26,25 +26,27 @@ const Home = () => {
             Find Security Guards the Easy Way.
           </h1>
           
-          <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
+          <div className="flex flex-wrap justify-center sm:justify-start sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-4 mb-4">
             {/* Companies Start Here Button */}
             <Link
               to="/companies-for-hire"
               target="_blank"
-              className="inline-block px-8 py-4 text-med font-bold text-white bg-[#2A69EF] rounded-lg text-center hover:bg-blue-600 transition-colors sm:w-auto w-4/6"
-              >
+              className="inline-block px-8 py-4 text-med font-bold text-white bg-[#2A69EF] rounded-lg text-center hover:bg-blue-600 transition-colors w-full sm:w-auto sm:mx-2"
+            >
               Companies Start Here
             </Link>
-            
+
             {/* Security Guards Start Here Button */}
             <Link
               to="/security-guard-register"
               target="_blank"
-              className="inline-block px-8 py-4 text-sm font-bold text-white bg-[#2A69EF] rounded-lg text-center hover:bg-blue-600 transition-colors sm:w-auto w-4/6"
-              >
+              className="inline-block px-8 py-4 text-med font-bold text-white bg-[#2A69EF] rounded-lg text-center hover:bg-blue-600 transition-colors w-full sm:w-auto sm:mx-2"
+            >
               Security Guards Start Here
             </Link>
           </div>
+
+
         </div>
       </div>
 

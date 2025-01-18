@@ -673,7 +673,7 @@
     align-items: center;
   }
   .nav-logo-container img {
-    max-width: 250px; /* Further reduced for very small screens */
+    max-width: 230px; /* Further reduced for very small screens */
   }
   
   

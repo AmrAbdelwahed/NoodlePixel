@@ -1,5 +1,7 @@
 import React from 'react';
 import { UserCheck, Clock, Shield, Globe } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
 
 const HowItWorks = () => {
   return (
@@ -74,16 +76,26 @@ const HowItWorks = () => {
           </div>
         </div>
 
-        <div className="text-center space-x-4">
-          <a href="/security-guard-register" 
-             className="inline-block px-8 py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors">
-            Security Guards Start Here
-          </a>
-          <a href="/companies-for-hire"
-             className="inline-block px-8 py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors">
+        <div className="flex flex-col items-center justify-center gap-4 w-full md:flex-row">
+          {/* Companies Start Here Button */}
+          <Link
+            to="/companies-for-hire"
+            target="_blank"
+            className="w-full md:w-auto px-8 py-4 text-base font-bold text-white bg-[#2A69EF] rounded-lg text-center hover:bg-blue-600 transition-colors max-w-[300px]"
+          >
             Companies Start Here
-          </a>
+          </Link>
+          
+          {/* Security Guards Start Here Button */}
+          <Link
+            to="/security-guard-register"
+            target="_blank"
+            className="w-full md:w-auto px-8 py-4 text-base font-bold text-white bg-[#2A69EF] rounded-lg text-center hover:bg-blue-600 transition-colors max-w-[300px]"
+          >
+            Security Guards Start Here
+          </Link>
         </div>
+
       </div>
     </div>
   );
