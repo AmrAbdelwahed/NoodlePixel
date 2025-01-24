@@ -95,9 +95,10 @@ const Guards = () => {
         throw new Error(data.error || 'Failed to submit form');
       }
     } catch (error) {
+      console.error('Error in form submission:', error);
       setSnackbar({
         open: true,
-        message: error.message,
+        message: error.message || 'An unexpected error occurred',
         severity: 'error',
       });
     } finally {

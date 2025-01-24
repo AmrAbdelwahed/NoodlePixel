@@ -7,7 +7,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-xl mx-auto mb-16 text-center">
           <h2 className="text-4xl font-bold text-blue-900">
-            About Guard Armor
+            About GUARDARMOR SECURITY
           </h2>
         </div>
 
@@ -57,7 +57,7 @@ const About = () => {
 
         <div className="text-center">
           <a 
-            href="mailto:info@guardarmor.com?subject=More%20information%20about%20Guard%20Armor%20please"
+            href="mailto:guardarmor@yahoo.com?subject=More%20information%20about%20Guard%20Armor%20please"
             className="inline-block px-8 py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors"
           >
             Contact Us

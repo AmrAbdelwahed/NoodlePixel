@@ -26,7 +26,7 @@ const GuardTypes = () => {
                   <div className="w-16 h-16 bg-blue-100 rounded-2xl mb-6 flex items-center justify-center">
                     <Shield className="w-8 h-8 text-blue-600" />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900">Armed Security</h3>
+                  <h3 className="text-2xl font-bold text-gray-900">Unarmed Guards or Armed Guards</h3>
                 </div>
               </div>
 
@@ -36,7 +36,7 @@ const GuardTypes = () => {
                   <div className="w-16 h-16 bg-blue-100 rounded-2xl mb-6 flex items-center justify-center">
                     <UserCheck className="w-8 h-8 text-blue-600" />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900">Unarmed Security</h3>
+                  <h3 className="text-2xl font-bold text-gray-900">Residential Guards or Private Event Guards</h3>
                 </div>
               </div>
 
@@ -46,7 +46,7 @@ const GuardTypes = () => {
                   <div className="w-16 h-16 bg-blue-100 rounded-2xl mb-6 flex items-center justify-center">
                     <Shield className="w-8 h-8 text-blue-600" />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900">Specialized Security</h3>
+                  <h3 className="text-2xl font-bold text-gray-900">Parking & Facility Guards or Mobile Patrol Security</h3>
                 </div>
               </div>
             </div>
