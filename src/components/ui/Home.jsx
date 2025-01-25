@@ -7,6 +7,13 @@ import StreamlineHiring from './StreamlineHiring';
 import GuardTypes from './GuardTypes';
 import Pricing from './Pricing';
 import About from './About';
+import ThreeImages from './ThreeImages';
+
+
+import image1 from '@/assets/car-guard.jpg';
+import image2 from '@/assets/two-guards.jpg';
+import image3 from '@/assets/guardback.jpg';
+
 import BannerBackground from "@/assets/securityguard.png";
 import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
@@ -26,7 +33,7 @@ const Home = () => {
             Find Security Guards the Easy Way.
           </h1>
           
-          <div className="flex flex-wrap justify-center sm:justify-start sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-4 mb-4">
+          <div className="flex flex-wrap justify-center sm:justify-start sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-20 mb-4">
             {/* Companies Start Here Button */}
             <Link
               to="/companies-for-hire"
@@ -72,6 +79,9 @@ const Home = () => {
       <div id="guard-types">
         <GuardTypes />
       </div>
+
+      {/* Three Images Component */}
+      <ThreeImages image1={image3} image2={image2} image3={image1} />
       
       <div id="pricing">
         <Pricing />
