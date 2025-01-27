@@ -119,8 +119,8 @@ const Guards = () => {
             { icon: AccountCircleIcon, name: 'fullName', placeholder: 'Full Name' },
             { icon: DialpadTwoToneIcon, name: 'phone', placeholder: 'Phone Number', type: 'tel' },
             { icon: EmailIcon, name: 'email', placeholder: 'Email Address', type: 'email' },
-            { icon: LocationCityIcon, name: 'city', placeholder: 'City' },
-            { icon: InfoIcon, name: 'license', placeholder: 'Security Guard License' },
+            { icon: LocationCityIcon, name: 'city', placeholder: 'City You Live' },
+            { icon: InfoIcon, name: 'license', placeholder: 'Security Guard License Number' },
             { icon: InfoIcon, name: 'yearsOfExperience', placeholder: 'Years of Experience' },
           ].map(({ icon: Icon, name, placeholder, type = 'text' }) => (
             <div className="input" key={name}>

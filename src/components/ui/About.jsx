@@ -1,5 +1,6 @@
 import React from 'react';
 import { Award, Shield, Zap } from 'lucide-react';
+import canadaImage from '../../assets/canada.png'; // Adjust the relative path if needed
 
 const About = () => {
   return (
@@ -20,7 +21,7 @@ const About = () => {
               Committed Leader in Staffing
             </h5>
             <p className="text-gray-600">
-              35+ years experience in the security and protection industries means 
+              With years experience in the security and protection industries means 
               access to a network of quality companies and experienced guards. 
               We work with organizations and customers all across North America.
             </p>
@@ -56,12 +57,26 @@ const About = () => {
         </div>
 
         <div className="text-center">
+          {/* Contact Us Button */}
           <a 
-            href="mailto:guardarmor@yahoo.com?subject=More%20information%20about%20Guard%20Armor%20please"
+            href="mailto:info@guardarmor.ca?subject=More%20information%20about%20Guard%20Armor%20please"
             className="inline-block px-8 py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors"
           >
             Contact Us
           </a>
+
+          {/* Contact Information */}
+          <div className="mt-6 space-y-2 text-gray-700">
+            <p className="text-lg">
+              Head Office: <span className="font-semibold">Oakville, Ontario, Canada <img src={canadaImage} alt="🇨🇦" className="inline-block w-5 h-3.5" /></span>
+            </p>
+            <p className="text-lg">
+              Email Address: <span className="font-semibold">info@guardarmor.ca</span>
+            </p>
+            <p className="text-lg">
+              Phone Number: <span className="font-semibold">519-999-9730</span>
+            </p>
+          </div>
         </div>
       </div>
     </div>
