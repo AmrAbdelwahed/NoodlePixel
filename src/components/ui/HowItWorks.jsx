@@ -81,7 +81,7 @@ const HowItWorks = () => {
           <Link
             to="/companies-for-hire"
             target="_blank"
-            className="w-full md:w-auto px-8 py-4 text-base font-bold text-white bg-[#2A69EF] rounded-lg text-center hover:bg-blue-600 transition-colors max-w-[300px]"
+            className="w-full md:w-auto px-8 py-4 text-base text-large font-bold text-white bg-[#2A69EF] rounded-lg text-center hover:bg-blue-600 transition-colors max-w-[300px]"
           >
             Companies Start Here
           </Link>
@@ -90,7 +90,7 @@ const HowItWorks = () => {
           <Link
             to="/security-guard-register"
             target="_blank"
-            className="w-full md:w-auto px-8 py-4 text-base font-bold text-white bg-[#2A69EF] rounded-lg text-center hover:bg-blue-600 transition-colors max-w-[300px]"
+            className="w-full md:w-auto px-8 py-4 text-base text-large font-bold text-white bg-[#2A69EF] rounded-lg text-center hover:bg-blue-600 transition-colors max-w-[300px]"
           >
             Security Guards Start Here
           </Link>

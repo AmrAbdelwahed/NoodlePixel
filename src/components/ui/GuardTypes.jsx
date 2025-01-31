@@ -15,7 +15,7 @@ const GuardTypes = () => {
 
           <div className="mb-24">
             <p className="text-2xl text-gray-600 mb-16 text-center max-w-3xl mx-auto leading-relaxed">
-              Whether you need armed guards, unarmed guards, or specialized security personnel, 
+              Whether you need retail guards, residential guards, or specialized security personnel, 
               we source only the most experienced professionals.
             </p>
 
@@ -26,7 +26,7 @@ const GuardTypes = () => {
                   <div className="w-16 h-16 bg-blue-100 rounded-2xl mb-6 flex items-center justify-center">
                     <Shield className="w-8 h-8 text-blue-600" />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900">Unarmed Guards or Armed Guards</h3>
+                  <h3 className="text-2xl font-bold text-gray-900"> Retail Security Guards or Healthcare Security Officers</h3>
                 </div>
               </div>
 
