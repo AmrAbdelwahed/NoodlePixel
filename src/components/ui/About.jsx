@@ -1,6 +1,8 @@
 import React from 'react';
 import { Award, Shield, Zap } from 'lucide-react';
 import canadaImage from '../../assets/canada.png'; // Adjust the relative path if needed
+import { Instagram, Twitter, Linkedin, Youtube } from 'lucide-react'; // Import icons
+import { SiTiktok } from 'react-icons/si';
 
 const About = () => {
   return (
@@ -77,6 +79,56 @@ const About = () => {
               Phone Number: <span className="font-semibold">519-999-9730</span>
             </p>
           </div>
+        </div>
+      </div>
+
+      {/* Footer Section */}
+      <div className="bg-[#2A69EF] py-8 mt-20">
+        <div className="container mx-auto px-4">
+          <div className="flex justify-center space-x-6">
+            {/* Instagram */}
+            <a 
+              href="https://www.instagram.com/guardarmor_security" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white hover:text-blue-200 transition-colors"
+            >
+              <Instagram size={24} />
+            </a>
+
+            {/* X (Twitter) */}
+            <a 
+              href="https://x.com/GuardArmorSecur" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white hover:text-blue-200 transition-colors"
+            >
+              <Twitter size={24} />
+            </a>
+
+            {/* TikTok */}
+              <a 
+                href="https://www.tiktok.com/@guard.armor.securi" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-white hover:text-blue-200 transition-colors"
+              >
+                <SiTiktok size={24} />
+            </a>
+            {/* LinkedIn */}
+            <a 
+              href="https://www.linkedin.com/company/guard-armor-security-ltd/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white hover:text-blue-200 transition-colors"
+            >
+              <Linkedin size={24} />
+            </a>
+          </div>
+
+          <p className="text-center text-white mt-4">
+            &copy; {new Date().getFullYear()} Guard Armor Security Ltd. All rights reserved.
+          </p>
         </div>
       </div>
     </div>

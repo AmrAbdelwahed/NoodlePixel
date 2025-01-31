@@ -57,7 +57,7 @@ const Pricing = () => {
               Sign up
             </Link> */}
             <p className="text-lg">
-              or call us today at <span className="font-bold">(905) 487-7906</span> to get started.
+              or call us today at <span className="font-bold">519-999-9730</span> to get started.
             </p>
           </div>
         </div>
