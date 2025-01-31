@@ -1,8 +1,8 @@
 import React from 'react';
 import { Award, Shield, Zap } from 'lucide-react';
 import canadaImage from '../../assets/canada.png'; // Adjust the relative path if needed
-import { Instagram, Twitter, Linkedin, Youtube } from 'lucide-react'; // Import icons
-import { SiTiktok } from 'react-icons/si';
+import { Instagram, Twitter, Linkedin } from 'lucide-react'; // Import icons
+import { SiTiktok, SiX  } from 'react-icons/si';
 
 const About = () => {
   return (
@@ -97,13 +97,13 @@ const About = () => {
             </a>
 
             {/* X (Twitter) */}
-            <a 
-              href="https://x.com/GuardArmorSecur" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-white hover:text-blue-200 transition-colors"
-            >
-              <Twitter size={24} />
+              <a 
+                href="https://x.com/GuardArmorSecur" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-white hover:text-blue-200 transition-colors"
+              >
+                <SiX size={24} />
             </a>
 
             {/* TikTok */}
