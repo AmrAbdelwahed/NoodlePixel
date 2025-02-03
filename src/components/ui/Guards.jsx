@@ -139,7 +139,7 @@ const Guards = () => {
         <div className="input-container">
           <div className="input">
             <TextField
-              label="Additional Details"
+              label="Additional Details (please include your availability)"
               multiline
               rows={4}
               variant="outlined"

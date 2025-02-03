@@ -38,7 +38,7 @@ const Home = () => {
             <Link
               to="/companies-for-hire"
               target="_blank"
-              className="inline-block px-8 py-4 text-xl font-bold text-white bg-[#2A69EF] rounded-lg text-center hover:bg-blue-600 transition-colors w-full sm:w-auto sm:mx-2"
+              className="inline-block px-8 py-4 text-xl font-bold text-white bg-[#2A69EF] rounded-lg text-center hover:bg-blue-600 transition-colors w-full sm:w-80 sm:mx-2"
             >
               Companies Start Here
             </Link>
@@ -47,7 +47,7 @@ const Home = () => {
             <Link
               to="/security-guard-register"
               target="_blank"
-              className="inline-block px-8 py-4 text-xl font-bold text-white bg-[#2A69EF] rounded-lg text-center hover:bg-blue-600 transition-colors w-full sm:w-auto sm:mx-2"
+              className="inline-block px-8 py-4 text-xl font-bold text-white bg-[#2A69EF] rounded-lg text-center hover:bg-blue-600 transition-colors w-full sm:w-80 sm:mx-2"
             >
               Security Guards Start Here
             </Link>

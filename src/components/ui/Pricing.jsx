@@ -49,15 +49,8 @@ const Pricing = () => {
           </p>
 
           <div className="text-center space-y-4">
-            {/* <Link 
-              to="/companies-register" 
-              className="inline-block px-8 py-4 bg-blue-600 text-white font-bold rounded-lg 
-                       hover:bg-blue-700 transition-colors text-lg"
-            >
-              Sign up
-            </Link> */}
             <p className="text-lg">
-              or call us today at <span className="font-bold">519-999-9730</span> to get started.
+              Call us today at <span className="font-bold">+1(866) 603-2179</span> to get started.
             </p>
           </div>
         </div>

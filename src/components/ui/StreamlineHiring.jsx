@@ -28,14 +28,6 @@ const StreamlineHiring = () => {
               is a breeze, just fill in a few details and Guard Armor does the rest!
             </p>
           </div>
-
-          {/* <Link 
-            to="/companies-register" 
-            className="inline-block px-8 py-4 bg-blue-600 text-white font-bold rounded-lg 
-                     hover:bg-blue-700 transition-colors text-lg"
-          >
-            COMPANIES: REGISTER HERE
-          </Link> */}
         </div>
       </div>
     </div>

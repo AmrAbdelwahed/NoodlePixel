@@ -75,8 +75,8 @@ const About = () => {
             <p className="text-lg">
               Email Address: <span className="font-semibold">info@guardarmor.ca</span>
             </p>
-            <p className="text-lg">
-              Phone Number: <span className="font-semibold">519-999-9730</span>
+            <p className="text-lg"> 
+              Phone Number: <span className="font-semibold"> +1(866) 603-2179 </span>
             </p>
           </div>
         </div>
@@ -127,7 +127,7 @@ const About = () => {
           </div>
 
           <p className="text-center text-white mt-4">
-            &copy; {new Date().getFullYear()} Guard Armor Security Ltd. All rights reserved.
+            &copy; 2021 Guard Armor Security Ltd. All rights reserved.
           </p>
         </div>
       </div>
