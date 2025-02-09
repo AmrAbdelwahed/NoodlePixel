@@ -62,8 +62,7 @@ const About = () => {
           {/* Contact Us Button */}
           <a 
             href="mailto:info@guardarmor.ca?subject=More%20information%20about%20Guard%20Armor%20please"
-            className="inline-block px-8 py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors"
-          >
+            className="inline-block px-8 py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors">
             Contact Us
           </a>
 
