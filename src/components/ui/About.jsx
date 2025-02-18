@@ -69,7 +69,7 @@ const About = () => {
           {/* Contact Information */}
           <div className="mt-6 space-y-2 text-gray-700">
             <p className="text-lg">
-              Head Office: <span className="font-semibold">Oakville, Ontario, Canada <img src={canadaImage} alt="🇨🇦" className="inline-block w-5 h-3.5" /></span>
+              Head Office: <span className="font-semibold">Toronto, Canada <img src={canadaImage} alt="🇨🇦" className="inline-block w-5 h-3.5" /></span>
             </p>
             <p className="text-lg">
               Email Address: <span className="font-semibold">info@guardarmor.ca</span>
