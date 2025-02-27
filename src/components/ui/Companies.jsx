@@ -21,7 +21,6 @@ const Companies = () => {
     firstName: '',
     lastName: '',
     city: '',
-    securityGuardType: '',
     numberOfGuards: '',
     service: '',
     details: '',
@@ -46,7 +45,6 @@ const Companies = () => {
     if (!formData.firstName.trim()) newErrors.firstName = 'First name is required';
     if (!formData.lastName.trim()) newErrors.lastName = 'Last name is required';
     if (!formData.city.trim()) newErrors.city = 'City is required';
-    if (!formData.securityGuardType.trim()) newErrors.securityGuardType = 'Security guard type is required';
     if (!formData.numberOfGuards.trim()) newErrors.numberOfGuards = 'Number of security guards is required';
     if (!formData.service.trim()) newErrors.service = 'Type of service is required';
     
@@ -97,7 +95,6 @@ const Companies = () => {
           firstName: '',
           lastName: '',
           city: '',
-          securityGuardType: '',
           numberOfGuards: '',
           service: '',
           details: '',
@@ -132,7 +129,6 @@ const Companies = () => {
             { icon: AccountCircleIcon, name: 'firstName', placeholder: 'Enter your First Name' },
             { icon: AccountCircleIcon, name: 'lastName', placeholder: 'Enter your Last Name' },
             { icon: LocationCityIcon, name: 'city', placeholder: 'Enter your City' },
-            { icon: InfoIcon, name: 'securityGuardType', placeholder: 'Type of Security Guard' },
             { icon: InfoIcon, name: 'numberOfGuards', placeholder: "Number of Security Guards" },
             { icon: InfoIcon, name: 'service', placeholder: 'Type of Service' },
           ].map(({ icon: Icon, name, placeholder, type = 'text' }) => (
