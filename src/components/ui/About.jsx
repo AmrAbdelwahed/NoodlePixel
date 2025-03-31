@@ -14,7 +14,7 @@ const About = () => {
             About GUARDARMOR SECURITY
           </h2>
           <div className="flex justify-center mt-2">
-            <img src={newLogo} alt="GUARDARMOR SECURITY Logo" className="h-40" />
+            <img src={newLogo} alt="GUARDARMOR SECURITY Logo" className="h-60 mt-2" />
           </div>
         </div>
 

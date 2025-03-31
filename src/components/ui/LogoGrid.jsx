@@ -13,13 +13,13 @@ const LogoGrid = ({ logos, title }) => {
           )}
          
           {/* Grid with 4 columns on large screens, 2 on medium, 1 on small */}
-          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
             {logos.map((logo, index) => (
               <div key={index} className="flex items-center justify-center h-24">
                 <img
                   src={logo.src}
                   alt={logo.alt}
-                  className="max-h-16 max-w-full object-contain"
+                  className="max-h-24 max-w-full object-contain"
                 />
               </div>
             ))}

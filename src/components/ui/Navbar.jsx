@@ -59,7 +59,7 @@ const Navbar = () => {
             src={newLogo} 
             alt="Company Logo" 
             style={{ 
-              height: '100px', 
+              height: '70px', 
               width: 'auto', 
               marginRight: '5px',
               borderRadius: '4px' 
