@@ -12,6 +12,8 @@ import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import logo from '../../assets/guardarmor.png';
 import mapleLeaf from '../../assets/leaf.png';
+import newLogo from '../../assets/new-logo.png';
+
 import "@/assets/navbar.css";
 
 const Navbar = () => {
@@ -52,6 +54,17 @@ const Navbar = () => {
           onClick={() => handleNavigation('/home')} 
           style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}
         >
+          {/* New company logo */}
+          <img 
+            src={newLogo} 
+            alt="Company Logo" 
+            style={{ 
+              height: '100px', 
+              width: 'auto', 
+              marginRight: '5px',
+              borderRadius: '4px' 
+            }} 
+          />
           <img src={logo} alt="GuardArmor Logo" style={{ height: 'auto' }} />
           <img 
             src={mapleLeaf} 

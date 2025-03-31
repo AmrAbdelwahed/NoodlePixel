@@ -2,7 +2,8 @@ import React from 'react';
 import { Award, Shield, Zap } from 'lucide-react';
 import canadaImage from '../../assets/canada.png'; // Adjust the relative path if needed
 import { Instagram, Twitter, Linkedin } from 'lucide-react'; // Import icons
-import { SiTiktok, SiX  } from 'react-icons/si';
+import { SiTiktok, SiX, SiWhatsapp } from 'react-icons/si';
+import newLogo from '../../assets/new-logo.png';
 
 const About = () => {
   return (
@@ -12,6 +13,9 @@ const About = () => {
           <h2 className="text-4xl font-bold text-blue-900">
             About GUARDARMOR SECURITY
           </h2>
+          <div className="flex justify-center mt-2">
+            <img src={newLogo} alt="GUARDARMOR SECURITY Logo" className="h-40" />
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
@@ -96,24 +100,25 @@ const About = () => {
             </a>
 
             {/* X (Twitter) */}
-              <a 
-                href="https://x.com/GuardArmorSecur" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-white hover:text-blue-200 transition-colors"
-              >
-                <SiX size={24} />
+            <a 
+              href="https://x.com/GuardArmorSecur" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white hover:text-blue-200 transition-colors"
+            >
+              <SiX size={24} />
             </a>
 
             {/* TikTok */}
-              <a 
-                href="https://www.tiktok.com/@guard.armor.securi" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-white hover:text-blue-200 transition-colors"
-              >
-                <SiTiktok size={24} />
+            <a 
+              href="https://www.tiktok.com/@guard.armor.securi" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white hover:text-blue-200 transition-colors"
+            >
+              <SiTiktok size={24} />
             </a>
+            
             {/* LinkedIn */}
             <a 
               href="https://www.linkedin.com/company/guard-armor-security-ltd/" 
@@ -122,6 +127,16 @@ const About = () => {
               className="text-white hover:text-blue-200 transition-colors"
             >
               <Linkedin size={24} />
+            </a>
+            
+            {/* WhatsApp */}
+            <a 
+              href="https://wa.me/message/UKU2H2DTWOEOO1" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white hover:text-blue-200 transition-colors"
+            >
+              <SiWhatsapp size={24} />
             </a>
           </div>
 
