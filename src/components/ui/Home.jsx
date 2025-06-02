@@ -22,7 +22,6 @@ export default function EnhancedAgencyLandingPage() {
     }
   };
 
-
   const services = [
     {
       title: 'Web Design',
@@ -56,9 +55,9 @@ export default function EnhancedAgencyLandingPage() {
   };
 
   return (
-    <div className="bg-gradient-to-br from-black via-gray-900 to-black text-white font-sans relative overflow-hidden">
+    <div className="min-h-screen w-screen bg-gradient-to-br from-black via-gray-900 to-black text-white font-sans overflow-x-hidden">
       {/* Animated Background Elements */}
-      <div className="fixed inset-0 opacity-5 pointer-events-none">
+      <div className="fixed inset-0 opacity-5 pointer-events-none overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-orange-500 rounded-full blur-3xl animate-pulse"></div>
         <div 
           className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-blue-500 rounded-full blur-3xl animate-pulse" 
@@ -72,7 +71,7 @@ export default function EnhancedAgencyLandingPage() {
           scrollY > 50 ? 'bg-black/90 backdrop-blur-lg border-b border-orange-500/20 shadow-lg' : 'bg-transparent'
         }`}
       >
-        <header className="flex justify-between items-center p-6 max-w-7xl mx-auto">
+        <header className="flex justify-between items-center py-6 px-6 w-full max-w-none">
           <div className="text-orange-500 font-bold text-2xl cursor-pointer hover:scale-105 transition-transform duration-300">
             Noodle Pixel
           </div>
@@ -98,8 +97,8 @@ export default function EnhancedAgencyLandingPage() {
       </div>
 
       {/* Enhanced Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center text-center px-6 pt-20">
-        <div className="max-w-5xl mx-auto animate-fade-in-up">
+      <section className="relative min-h-screen flex items-center justify-center text-center px-6 pt-20 w-full">
+        <div className="max-w-5xl mx-auto animate-fade-in-up w-full">
           <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
             The Go-To Agency For <br />
             Your Business' <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600 animate-gradient">Success</span>
@@ -114,10 +113,6 @@ export default function EnhancedAgencyLandingPage() {
             onClick={scrollToCalendly}>
               Book A Free Strategy Call
             </button>
-            
-            {/* <button className="border-2 border-orange-500 px-8 py-4 rounded-full font-semibold text-orange-500 hover:bg-orange-500 hover:text-black hover:scale-105 transition-all duration-300">
-              View Our Work
-            </button> */}
           </div>
         </div>
 
@@ -127,11 +122,11 @@ export default function EnhancedAgencyLandingPage() {
       </section>
 
       {/* Enhanced Trusted Brands */}
-      <section className="py-16 bg-gradient-to-r from-gray-900/50 to-black/50 backdrop-blur-sm">
+      {/* <section className="py-16 bg-gradient-to-r from-gray-900/50 to-black/50 backdrop-blur-sm w-full">
         <p className="text-center text-gray-400 text-sm mb-8 tracking-wider opacity-0 animate-fade-in-up-on-scroll">
           TRUSTED BY AMAZING BRANDS
         </p>
-        <div className="flex flex-wrap justify-center gap-8 px-4">
+        <div className="flex flex-wrap justify-center gap-8 px-4 w-full">
           {[...Array(6)].map((_, i) => (
             <div
               key={i}
@@ -142,10 +137,10 @@ export default function EnhancedAgencyLandingPage() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* How We Work Section */}
-      <section className="flex flex-col md:flex-row justify-between max-w-7xl mx-auto py-16 px-6 gap-12">
+      <section className="flex flex-col md:flex-row justify-between py-16 px-6 gap-12 w-screen">
         <div className="opacity-0 animate-fade-in-left">
           <h2 className="text-orange-500 text-xs uppercase tracking-wider">How We Work</h2>
           <h3 className="text-4xl font-bold mt-2 leading-tight">Get a dedicated team to improve your business' online presence.</h3>
@@ -162,8 +157,8 @@ export default function EnhancedAgencyLandingPage() {
       </section>
 
       {/* Enhanced Services */}
-      <section id="services" className="py-20 bg-gradient-to-br from-gray-900/30 to-black/30">
-        <div className="max-w-7xl mx-auto px-6">
+      <section id="services" className="py-20 bg-gradient-to-br from-gray-900/30 to-black/30 w-full">
+        <div className="max-w-7xl mx-auto px-6 w-full">
           <div className="text-center mb-16 opacity-0 animate-fade-in-up-on-scroll">
             <p className="text-sm text-orange-500 uppercase tracking-wider mb-4">Our Services</p>
             <h3 className="text-4xl md:text-5xl font-bold mb-6">
@@ -174,7 +169,7 @@ export default function EnhancedAgencyLandingPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 w-full">
             {services.map((service, i) => (
               <div
                 key={i}
@@ -212,15 +207,15 @@ export default function EnhancedAgencyLandingPage() {
       </section>
 
       {/* Enhanced Stats */}
-      <section className="py-20 text-center bg-gradient-to-r from-gray-900/50 to-black/50">
+      <section className="py-20 text-center bg-gradient-to-r from-gray-900/50 to-black/50 w-full">
         <h3 className="text-4xl font-bold mb-16 opacity-0 animate-fade-in-up-on-scroll">
           Our results speak for themselves
         </h3>
         
-        <div className="flex flex-wrap justify-center gap-16 max-w-4xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-16 max-w-4xl mx-auto w-full">
           {[
             { value: '100%', label: 'Customer Satisfaction' },
-            { value: '$2M+', label: 'Revenue Generated' },
+            // { value: '$2M+', label: 'Revenue Generated' },
             { value: '150+', label: 'Happy Clients' }
           ].map((stat, i) => (
             <div
@@ -238,9 +233,9 @@ export default function EnhancedAgencyLandingPage() {
       </section>
 
       {/* Process Section */}
-      <section id="process" className="py-16 bg-gradient-to-br from-gray-900/50 to-black/50 text-center">
+      <section id="process" className="py-16 bg-gradient-to-br from-gray-900/50 to-black/50 text-center w-full">
         <h3 className="text-3xl font-bold mb-10 opacity-0 animate-fade-in-up-on-scroll">Our process</h3>
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6 text-left">
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6 text-left w-full">
           {['Contact Us', 'Project Proposal', 'Project Start'].map((step, i) => (
             <div key={i} className="opacity-0 animate-fade-in-up-on-scroll" style={{animationDelay: `${i * 200}ms`}}>
               <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl border border-gray-700 hover:border-orange-500/50 transition-all duration-300 hover:scale-105">
@@ -257,16 +252,16 @@ export default function EnhancedAgencyLandingPage() {
       </section>
 
       {/* Testimonials */}
-      <section id="testimonials" className="py-16 text-center">
+      <section id="testimonials" className="py-16 text-center w-full">
         <h3 className="text-3xl font-bold mb-10 opacity-0 animate-fade-in-up-on-scroll">What our clients say about us</h3>
-        <div className="max-w-2xl mx-auto px-6">
+        <div className="max-w-2xl mx-auto px-6 w-full">
           <div className="bg-gradient-to-br from-white to-gray-100 text-black p-8 rounded-3xl shadow-2xl opacity-0 animate-fade-in-up-on-scroll">
             <div className="flex items-center gap-4 mb-4">
               <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold">
                 AT
               </div>
               <div className="text-left">
-                <p className="font-bold text-lg">Abou Toure</p>
+                <p className="font-bold text-lg">Anas Wafy</p>
                 <p className="text-sm text-gray-600">CEO, TechCorp</p>
               </div>
             </div>
@@ -281,18 +276,18 @@ export default function EnhancedAgencyLandingPage() {
       </section>
 
       {/* Interactive FAQ */}
-      <section id="faq" className="py-20 px-6 bg-gradient-to-br from-gray-900/30 to-black/30">
-        <div className="max-w-4xl mx-auto">
+      <section id="faq" className="py-20 px-6 bg-gradient-to-br from-gray-900/30 to-black/30 w-full">
+        <div className="max-w-4xl mx-auto w-full">
           <div className="text-center mb-16 opacity-0 animate-fade-in-up-on-scroll">
             <h3 className="text-4xl font-bold mb-4">Frequently Asked Questions</h3>
             <p className="text-xl text-gray-300">Everything you need to know about working with us</p>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-4 w-full">
             {faqs.map((faq, i) => (
               <div
                 key={i}
-                className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-2xl overflow-hidden border border-gray-700 hover:border-orange-500/50 transition-all duration-300 opacity-0 animate-fade-in-up-on-scroll"
+                className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-2xl overflow-hidden border border-gray-700 hover:border-orange-500/50 transition-all duration-300 opacity-0 animate-fade-in-up-on-scroll w-full"
                 style={{animationDelay: `${i * 100}ms`}}
               >
                 <button
@@ -325,9 +320,9 @@ export default function EnhancedAgencyLandingPage() {
       </section>
 
       {/* Why Us Section */}
-      <section id="whyus" className="bg-gradient-to-br from-gray-900/50 to-black/50 py-16 px-6 text-center">
-        <div className="max-w-4xl mx-auto opacity-0 animate-fade-in-up-on-scroll">
-          <h3 className="text-3xl font-bold mb-4">Why should you choose <span className="text-orange-500">X Agency</span></h3>
+      <section id="whyus" className="bg-gradient-to-br from-gray-900/50 to-black/50 py-16 px-6 text-center w-full">
+        <div className="max-w-4xl mx-auto opacity-0 animate-fade-in-up-on-scroll w-full">
+          <h3 className="text-3xl font-bold mb-4">Why should you choose <span className="text-orange-500">Noodle Pixel</span></h3>
           <p className="text-lg text-gray-300 mb-8 leading-relaxed">
             We create data-backed digital marketing strategies that deliver real, measurable results for your business growth.
           </p>
@@ -337,9 +332,9 @@ export default function EnhancedAgencyLandingPage() {
           </button>
         </div>
         
-        <div className="mt-16 opacity-0 animate-fade-in-up-on-scroll">
+        {/* <div className="mt-16 opacity-0 animate-fade-in-up-on-scroll w-full">
           <h4 className="text-2xl font-bold mb-8">Our Work Portfolio</h4>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto w-full">
             {[...Array(6)].map((_, i) => (
               <div 
                 key={i} 
@@ -349,12 +344,12 @@ export default function EnhancedAgencyLandingPage() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* Calendly Section */}
-      <section id="calendly" className="py-20 px-6 bg-gradient-to-br from-gray-900 to-black">
-        <div className="max-w-6xl mx-auto text-center">
+      <section id="calendly" className="py-20 px-6 bg-gradient-to-br from-gray-900 to-black w-full">
+        <div className="max-w-6xl mx-auto text-center w-full">
           <div className="mb-12 opacity-0 animate-fade-in-up-on-scroll">
             <h3 className="text-4xl font-bold mb-4">
               Ready to <span className="text-orange-500">Get Started?</span>
@@ -364,14 +359,19 @@ export default function EnhancedAgencyLandingPage() {
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-8 border border-gray-700 opacity-0 animate-fade-in-up-on-scroll">
-            <InlineWidget 
-              url="https://calendly.com/amrabdelwahed00/30min"
-              styles={{
-                height: '630px',
-                borderRadius: '12px'
-              }}
-            />
+           <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-4 sm:p-8 border border-gray-700 opacity-0 animate-fade-in-up-on-scroll w-full overflow-hidden">
+            <div className="w-full flex justify-center">
+              <InlineWidget
+                url="https://calendly.com/amrabdelwahed00/30min"
+                styles={{
+                  height: '630px',
+                  borderRadius: '12px',
+                  width: '100%',
+                  minWidth: '320px',
+                  maxWidth: '100%'
+                }}
+              />
+            </div>
           </div>
 
           <div className="mt-8 text-center opacity-0 animate-fade-in-up-on-scroll">
@@ -383,9 +383,9 @@ export default function EnhancedAgencyLandingPage() {
       </section>
 
       {/* Enhanced CTA Section */}
-      <section className="bg-gradient-to-r from-orange-500 to-orange-600 py-20 text-center relative overflow-hidden">
+      <section className="bg-gradient-to-r from-orange-500 to-orange-600 py-20 text-center relative overflow-hidden w-full">
         <div className="absolute inset-0 bg-black/10"></div>
-        <div className="relative z-10 max-w-4xl mx-auto px-6 opacity-0 animate-fade-in-up-on-scroll">
+        <div className="relative z-10 max-w-4xl mx-auto px-6 opacity-0 animate-fade-in-up-on-scroll w-full">
           <h3 className="text-4xl md:text-5xl font-bold mb-6 text-black">
             Ready to transform your business?
           </h3>
@@ -402,9 +402,9 @@ export default function EnhancedAgencyLandingPage() {
       </section>
 
       {/* Enhanced Footer */}
-      <footer className="bg-black py-16 px-6 border-t border-gray-800">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-start gap-12 mb-12">
+      <footer className="bg-black py-16 px-6 border-t border-gray-800 w-full">
+        <div className="max-w-6xl mx-auto w-full">
+          <div className="flex flex-col md:flex-row justify-between items-start gap-12 mb-12 w-full">
             <div className="max-w-md opacity-0 animate-fade-in-left">
               <div className="text-orange-500 font-bold text-3xl mb-4">Noodle Pixel</div>
               <p className="text-gray-300 leading-relaxed">
@@ -415,10 +415,10 @@ export default function EnhancedAgencyLandingPage() {
             <div className="space-y-4 opacity-0 animate-fade-in-right">
               <div className="text-gray-300">
                 <p className="font-semibold mb-2 text-white">Get in touch</p>
-                <p>amrabdelwahed@gmail.com</p>
+                <p>amrabdelwahed00@gmail.com</p>
                 <p>365-228-6281</p>
               </div>
-              <div className="flex gap-4 pt-4">
+              {/* <div className="flex gap-4 pt-4">
                 {['L', 'T', 'I'].map((platform, i) => (
                   <div
                     key={platform}
@@ -429,17 +429,47 @@ export default function EnhancedAgencyLandingPage() {
                     </span>
                   </div>
                 ))}
-              </div>
+              </div> */}
             </div>
           </div>
           
           <div className="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
-            <p>&copy; 2024 X Agency. All rights reserved. Built for success.</p>
+            <p>&copy; 2024 Noodle Pixel Agency. All rights reserved. Built for success.</p>
           </div>
         </div>
       </footer>
 
       <style jsx>{`
+        /* Ensure no horizontal overflow */
+        * {
+          box-sizing: border-box;
+        }
+        
+        html, body {
+          overflow-x: hidden !important;
+          width: 100% !important;
+          max-width: 100vw !important;
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+
+        /* Fix any potential width issues */
+        .w-screen {
+          width: 100vw !important;
+        }
+
+        /* Prevent any element from extending beyond viewport */
+        section, div, header, footer {
+          max-width: 100vw !important;
+        }
+
+        /* Fix for elements that might cause overflow */
+        .max-w-7xl, .max-w-6xl, .max-w-5xl, .max-w-4xl, .max-w-3xl, .max-w-2xl {
+          width: 100% !important;
+          padding-left: 1.5rem !important;
+          padding-right: 1.5rem !important;
+        }
+
         @keyframes fade-in-up {
           from {
             opacity: 0;
